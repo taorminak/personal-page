@@ -73,7 +73,7 @@ function QAndA() {
                   {sections[key].isOpen && (
                     <span className="container_text img__html">
                       <div>
-                      {key === "me" && sections[key].isOpen && (
+                        {key === "me" && sections[key].isOpen && (
                           <>
                             <p>
                               Passionate about programming. Fast-learner,
@@ -88,25 +88,94 @@ function QAndA() {
                             </p>
                           </>
                         )}
-                         {key === "skills" && sections[key].isOpen && (
-                            <div>
-                            <img src={html5} alt="HTML5" width="40" height="40"/>&nbsp;
-                            <img src={css3} alt="CSS3" width="40" height="40"/>&nbsp;
-                            <img src={sass} alt="SASS" width="40" height="40"/>&nbsp;
-                            <img src={eslint} alt="ESLint" width="40" height="40"/>&nbsp;
-                            <img src={bootstrap} alt="Bootstrap" width="40" height="40"/>&nbsp;
-                            <img src={figma} alt="Figma" width="40" height="40"/>&nbsp;
-                            <img src={js} alt="JavaScript" width="40" height="40"/>&nbsp;
-                            <img src={ts} alt="TypeScript" width="40" height="40"/>&nbsp;
-                            <img src={reactjs} alt="React" width="40" height="40"/>&nbsp;
-                            <img src={vue} alt="Vue" width="40" height="40"/>&nbsp;
-                            <img src={git} alt="Git" width="40" height="40"/>&nbsp;
-                            <img src={vscode} alt="VSCode" width="40" height="40"/>&nbsp;
-                            <img src={github} alt="GitHub" width="40" height="40" />&nbsp;
-                            <img src={trello} alt="Trello" width="40" height="40"/>&nbsp;
-                            <img src={webpack} alt="Webpack" width="40" height="40"/>&nbsp;
-                            </div>
-                          
+                        {key === "skills" && sections[key].isOpen && (
+                          <div>
+                            <img
+                              src={html5}
+                              alt="HTML5"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img src={css3} alt="CSS3" width="40" height="40" />
+                            &nbsp;
+                            <img src={sass} alt="SASS" width="40" height="40" />
+                            &nbsp;
+                            <img
+                              src={eslint}
+                              alt="ESLint"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={bootstrap}
+                              alt="Bootstrap"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={figma}
+                              alt="Figma"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={js}
+                              alt="JavaScript"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={ts}
+                              alt="TypeScript"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={reactjs}
+                              alt="React"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img src={vue} alt="Vue" width="40" height="40" />
+                            &nbsp;
+                            <img src={git} alt="Git" width="40" height="40" />
+                            &nbsp;
+                            <img
+                              src={vscode}
+                              alt="VSCode"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={github}
+                              alt="GitHub"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={trello}
+                              alt="Trello"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                            <img
+                              src={webpack}
+                              alt="Webpack"
+                              width="40"
+                              height="40"
+                            />
+                            &nbsp;
+                          </div>
                         )}
                         {key === "education" && sections[key].isOpen && (
                           <ul>
@@ -117,8 +186,7 @@ function QAndA() {
                             </li>
                           </ul>
                         )}
-                       
-                        
+
                         {key === "languages" && sections[key].isOpen && (
                           <ul>
                             <li>English C1</li>
