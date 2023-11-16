@@ -57,7 +57,7 @@ function QAndA() {
                 }`}
                 onMouseEnter={() => handleSectionChange(key, true)}
                 onMouseLeave={() => handleSectionChange(key, false)}
-                onTouchStart={() => handleSectionChange(key, true)}
+                onTouchStart={() => handleSectionChange(key, !sections[key].isOpen)}
                 onTouchEnd={() => handleSectionChange(key, false)}
               >
                 <input
@@ -68,7 +68,10 @@ function QAndA() {
                   onChange={() =>
                     handleSectionChange(key, !sections[key].isOpen)
                   }
-                  onClick={() => handleSectionChange(key, !sections[key].isOpen)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleSectionChange(key, !sections[key].isOpen);
+                  }}
                 />
                 <div className="container_part">
                   <span className="container_subtitle">{`...${key}`}</span>
@@ -76,7 +79,7 @@ function QAndA() {
                   {sections[key].isOpen && (
                     <span className="container_text img__html">
                       <div>
-                        {key === "me" && sections[key].isOpen && (
+                        {key === "me" && (
                           <>
                             <p>
                               Passionate about programming. Fast-learner,
@@ -91,7 +94,7 @@ function QAndA() {
                             </p>
                           </>
                         )}
-                        {key === "skills" && sections[key].isOpen && (
+                        {key === "skills" && (
                           <div>
                             <img
                               src={html5}
@@ -180,7 +183,7 @@ function QAndA() {
                             &nbsp;
                           </div>
                         )}
-                        {key === "education" && sections[key].isOpen && (
+                        {key === "education" && (
                           <ul>
                             <li>Online IT School "IT GIRLS"</li>
                             <li>
@@ -190,7 +193,7 @@ function QAndA() {
                           </ul>
                         )}
 
-                        {key === "languages" && sections[key].isOpen && (
+                        {key === "languages" && (
                           <ul>
                             <li>English C1</li>
                             <li>Russian C2</li>
