@@ -58,7 +58,6 @@ function QAndA() {
                 onMouseEnter={() => handleSectionChange(key, true)}
                 onMouseLeave={() => handleSectionChange(key, false)}
                 onTouchStart={() => handleSectionChange(key, !sections[key].isOpen)}
-                onTouchEnd={() => handleSectionChange(key, false)}
               >
                 <input
                   type="radio"
