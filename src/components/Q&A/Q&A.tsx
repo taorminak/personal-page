@@ -68,6 +68,7 @@ function QAndA() {
                   onChange={() =>
                     handleSectionChange(key, !sections[key].isOpen)
                   }
+                  onClick={() => handleSectionChange(key, !sections[key].isOpen)}
                 />
                 <div className="container_part">
                   <span className="container_subtitle">{`...${key}`}</span>
